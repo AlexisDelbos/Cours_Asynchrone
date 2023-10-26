@@ -1,0 +1,15 @@
+
+
+p {color: blue;}
+
+
+.paragraph{
+    border: 1px solid black ;
+    box-shadow: 5px 6px 0px black, 17px 18px 0px red ;
+}
+
+.paragraph2{
+    text-shadow: 66px 15px 0px rgb(197, 0, 0);
+
+
+}
