@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<fieldset>
+<legend> Infos personnelles </legend>
+
+<div> Prénom : <input type="text" name="prenom" placeholder="Ex: Jacques" maxlength="20" minlength="2" id="prenom"> </div>
+
+<div> Nom : <input type="text" name="nom" placeholder="Ex: Dubois" max="20" id="nom"> </div>
+
+<div> E-mail : <input type="text" name="E-mail" placeholder="Ex: monMail@FAI.com" max="50" id="E-mail">  </div>
+
+<div> Numéro : <input type="number" name="Téléphone" placeholder="Ex: 00.11.22.33.44" maxlength="15" minlength="2" id="numéro de Téléphone"> </div>
+
+<div> Mot de passe : <input type="password" name="password" placeholder="Ex : P@ssWo4d" maxlength="30"> </div>
+
+<div> Age : <input type="number" name="Age" placeholder="Ex : 15" maxlength="3"> </div>
+
+<div> Laissez un commentaire :  <br> <textarea placeholder="J'adore ce que vous faites"></textarea></div>
+
+<div> Date de mon commentaire : <input type="date"></div>
+
+<div> Ma photo: <input type="file" accept=".png, .jpg, .gif"></div>
+
+</fieldset>
+
+<fieldset>
+    <legend> Vous préférez : </legend>
+   <div> <input type="checkbox" id="checkbox"> <label for="checkbox"> HTML </label>
+    </div>
+    <div> <input type="checkbox" id="checkbox"> <label for="checkbox"> CSS </label> </div>
+    <div> <input type="checkbox" id="checkbox"> <label for="checkbox"> Le JavaScript </label> </div>
+    <div> <input type="checkbox" id="checkbox"> <label for="checkbox"> Ne rien faire </label> </div>
+
+</fieldset>
+
+<fieldset>
+    <legend> Vous vous levez : </legend>
+    <div> <input type="radio" name="Frequence" value="Matin"/> <label for="Le matin"> Le matin </label></div>
+    <div> <input type="radio" name="Frequence" value="Matin"/> <label for="Le midi"> Le midi </label></div>
+    <div> <input type="radio" name="Frequence" value="Matin"/> <label for="Le soir"> Le soir </label></div>
+    <div> <input type="radio" name="Frequence" value="Matin"/> <label for="En retard !"> En retard ! </label></div>
+</fieldset>
+
+<fieldset>
+    <legend> Fin du formulaire </legend>
+    <label for="liste"> Vous en avez assez ? </label>
+    <select name="liste" id="liste">
+        <optgroup label="Team Pas encore">
+            <option value="J'en veux plus"> J'en veux plus </option>
+            <option value="C'est super !"> C'est super ! </option>
+        </optgroup>
+        <optgroup label="Team Oula">
+            <option value="J'en ai marre"> J'en ai marre </option>
+            <option value=" Pitié !"> Pitié ! </option>
+        </optgroup> 
+    </select> <br>
+    <input type="submit" value="Envoyer"/>
+    <input type="submit" value="Reset"/> 
+</fieldset>
+
+
+
+</body>
+</html>
