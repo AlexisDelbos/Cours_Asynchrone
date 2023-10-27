@@ -1,0 +1,42 @@
+
+h1 {
+    color: red;
+
+}
+
+h3{
+    color: blue;
+
+}
+
+p{
+    background-color: rgb(186, 186, 186);
+    
+}
+
+strong{
+    color: rgb(108, 139, 14);
+
+
+}
+
+em{
+    color: orange;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+#deuxieme{
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+
+
+}
+
+#troisieme{
+    background-color: pink;
+
+
+}
