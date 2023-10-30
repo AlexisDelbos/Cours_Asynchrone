@@ -5,7 +5,7 @@ h1{
     text-shadow: 9px -8px 5px purple
 }
 
-p, #first {
+p, .first {
     box-shadow: 0px -0cqh 10px red;
 }
 
