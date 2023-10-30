@@ -2,29 +2,13 @@
 
 
 
-table {
-    border: 5px solid red;
+table, caption {
+    border: 2px solid rgb(238, 0, 255);
+    border-collapse: collapse;
 
 }
 
-caption {
-    border: 3px solid green
-}
-
-.colonne1 {
-    border: 3px solid purple;
-
-
-}
-
-td, .colonne1 {
-    border: 3px solid black;
-
-} 
-
-th {
-    border: 3px solid blue;
-
-
+th,td {
+    border: 2px solid rgb(247, 0, 255);
 }
 
