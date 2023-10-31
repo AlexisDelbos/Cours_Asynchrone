@@ -1,21 +1,17 @@
-table{
+table {
+    border: 5px solid purple;
     border-collapse: collapse;
-    border: double 5px blueviolet;
+    border-style: double;
 }
 
-td,
-th{
-    border: 2px black solid;
-    text-align: center;
+caption {
+    color:purple;
 }
 
-table, caption {
-    font-weight: bold;
-    color: blueviolet;
-
+th,td {
+    border: 2px solid black;
 }
 
 th {
-    background-color: lightskyblue;
+    background-color: lightblue;
 }
-
