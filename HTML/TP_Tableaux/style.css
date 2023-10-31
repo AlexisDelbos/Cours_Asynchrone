@@ -1,14 +1,21 @@
+table{
+    border-collapse: collapse;
+    border: double 5px blueviolet;
+}
 
-
-
+td,
+th{
+    border: 2px black solid;
+    text-align: center;
+}
 
 table, caption {
-    border: 2px solid rgb(238, 0, 255);
-    border-collapse: collapse;
+    font-weight: bold;
+    color: blueviolet;
 
 }
 
-th,td {
-    border: 2px solid rgb(247, 0, 255);
+th {
+    background-color: lightskyblue;
 }
 
