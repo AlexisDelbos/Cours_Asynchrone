@@ -1,0 +1,28 @@
+p {
+    background-color: grey;
+    border: 2px solid green;
+}
+
+body {
+    margin:0;
+    background-color:blueviolet;
+}
+
+.uno {
+    height: 100px;
+    padding:20px;
+    margin:0;
+}
+
+.dos {
+    width:50%;
+    padding:1.2em;
+    margin:20px 5px;
+}
+
+.tres {
+    height:200px;
+    width:200px;
+    padding:-30px;
+    margin:auto;
+}
