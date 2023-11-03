@@ -1,0 +1,115 @@
+
+.bloc1{
+      background-color: #D3D3D3;
+      width:650px;
+      height:370px;
+      margin-left: 10px;
+}
+
+
+.media{
+  color:#5555CE;
+  margin-left: 10px;
+
+}
+
+h1{
+  border: 2px;
+  background-color: #D3D3D3;
+  text-align: center;
+  width: 650px;
+  margin-left: 10px;
+}
+
+.page{
+  background-color: #D3D3D3;
+}
+
+h2{
+  color:#9C9EA7 ;
+
+}
+
+.p1,.p3,.p4,.p5{
+  background-color: white;
+  margin-left: 10px;
+  height: 25px;
+  width: 620px;
+}
+
+.p2,.p6{
+  background-color:#5555CE;
+  color: white;
+  margin-left: 10px;
+  height: 25px;
+  width:620px;
+}
+
+.bloc1:nth-child(2){
+  margin-left: 10px;
+}
+
+@media screen and (max-width:640px){
+  #one{
+    background-color: #5555CE;
+    color: white;
+    margin-left: 10px;
+    height: 25px;
+    width: 620px;
+  }     
+}
+
+@media screen and (min-width:800px){
+  #two{
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    height: 25px;
+    width: 620px;
+  }     
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px){
+  #three{
+    background-color: #5555CE;
+    color: white;
+    margin-left: 10px;
+    height: 25px;
+    width: 620px;
+  }     
+}
+
+@media screen and (max-width:480px){
+  #four{
+    background-color: #5555CE;
+    color: white;
+    margin-left: 10px;
+    height: 25px;
+    width: 620px;
+  }
+}
+
+@media screen and (orientation:portrait){
+  #five{
+    background-color: #5555CE;
+    color: white;
+    margin-left: 10px;
+    height: 25px;
+    width: 620px;
+  }
+}
+
+@media screen and (orientation:landscape){
+  #six{
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    height: 25px;
+    width: 620px;
+  }
+}
+
+
+
+
+
