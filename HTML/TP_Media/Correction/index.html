@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Test Media Queries</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Démo Media Queries</h1>
+	<div class="precisions">Règle(s) appliquée(s) :
+	<span class="regle1">@media screen and (max-width: 640px)</span>
+	<span class="regle2">@media screen and (min-width: 800px)</span>
+	<span class="regle3">@media screen and (min-width: 1024px) and (max-width: 1280px)</span>
+	<span class="regle4">@media screen and (max-device-width: 480px)</span>
+	<span class="regle5">@media screen and (orientation:portrait)</span>
+	<span class="regle6">@media screen and (orientation:landscape)</span>
+	</div>
+
+	<p class="small">La page est affichée avec une largeur &lt; 640px</p>
+	<p class="medium">La page est affichée avec une largeur &gt; 800px</p>
+	<p class="wide">La page est affichée avec une largeur &gt; 1024px et &lt; 1280px</p>
+	<p class="maxdevice">La page est affichée sur un périphérique de maximum 480px (ex: iPhone)</p>
+	<p class="portrait">La page est affichée en portrait</p>
+	<p class="landscape">La page est affichée en paysage</p>
+</body>
+</html>

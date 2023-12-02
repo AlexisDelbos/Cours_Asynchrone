@@ -1,0 +1,104 @@
+/* Ci-dessous : CSS media queries */
+
+/* 1: max-width */
+@media screen and (max-width: 640px) {
+	.small {
+		background: #5555CE;
+		color:#fff;
+	}
+	.precisions span.regle1 {
+		display: block;
+	}
+}
+
+
+/* 2: min-width */
+@media screen and (min-width: 800px) {
+	.medium {
+		background: #5555CE;
+		color:#fff;
+	}
+	.precisions span.regle2 {
+		display: block;
+	}
+}
+
+
+/* 3: min-width + max-width */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.wide {
+		background: #5555CE;
+		color:#fff;
+	}
+	.precisions span.regle3 {
+		display: block;
+	}
+}
+
+
+/* 4: max device width */
+@media screen and (max-device-width: 480px) {
+	.maxdevice {
+		background: #5555CE;
+		color:#fff;
+	}
+	.precisions span.regle4 {
+		display: block;
+	}
+}
+
+
+/* 5: orientation:portrait */
+@media screen and (orientation:portrait) {
+	.portrait {
+		background: #5555CE;
+		color:#fff;
+	}
+	.precisions span.regle5 {
+		display: block;
+	}
+}
+
+
+/* 6: orientation:paysage */
+@media screen and (orientation:landscape) {
+	.landscape {
+		background: #5555CE;
+		color:#fff;
+	}
+	.precisions span.regle6 {
+		display: block;
+	}
+}
+
+
+/* Styles généraux */
+body {
+	font-family:Sans-serif;
+	font-size:100%;
+	background:#F1F1F1;
+}
+a {
+	color:#369;
+}
+div, p, h1 {
+	padding: 0.5em 1em;
+	margin: 1em;
+	color:#666;
+	line-height:150%;
+}
+p {
+	color:#000;
+	background:#fff;
+}
+.precisions span {
+	color: #5555CE;
+	display: none;
+	font-weight:bold;
+}
+h1 {
+	padding:0;
+	color:#ccc;
+	text-shadow:1px 1px 1px #aaa;
+	margin-bottom:0;
+}
