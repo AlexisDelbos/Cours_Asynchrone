@@ -1,8 +1,51 @@
-.visible{
+/* .visible{
     font-size: 300px;
 }
 
 body{
-    margin: 0;
-    overflow: hidden;
+    height: 5000px;
 }
+
+.bar{
+    position: fixed;
+    width: 800px;
+    height: 50px;
+    border : 5px solid blue;
+}
+
+#file{
+    position: fixed;
+    
+    height: 50px;
+    background-color: black;
+} */
+.cheveux{
+    position: relative;
+    border: 5px solid paleturquoise;
+    width: 1500px;
+    height: 400px;
+}
+img{
+    max-width: 100%;
+}
+.veuch,.face{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+#imageButtonGauche{    
+    width: 50px;
+    height: 90px;
+    margin-top: 150px;
+    margin-left: 150px;
+    background-image: url(/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/arrow_left.png);
+    border-color: white;
+}
+#imageButtonDroit{
+    width: 50px;
+    height: 90px;
+    margin-left: 500px;
+    background-image: url(/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/arrow_right.png);
+    border-color: white;
+}
+

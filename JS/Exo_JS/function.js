@@ -1,3 +1,5 @@
+// Exo FONCTIONS 
+
 /* function f1(){
     console.log("Bonjour monde");
 } */
@@ -192,7 +194,6 @@ while (isNaN(old)) {
   }
 }
 */
-
 /* Génère un nombre aléatoire entre 1 et 100 et arrondi à l'entier le plus proche
 let nombre = Math.round(Math.random() * 100);
 
@@ -268,7 +269,6 @@ if(!isNaN(nombreUn)&& !isNaN(nombreDeux)){
 if (!isNaN(resultA)){
     alert(resultA);
 }*/
-
 /*
 let nombreUn = Math.round(Math.random() * 10);
 let nombreDeux = Math.round(Math.random() * 10);
@@ -285,7 +285,6 @@ while(resultA != nombreTrois){
     }
 }
 */
-
 /* let paragraphe = document.getElementsByTagName('p');
 console.log("la collection HTML", paragraphe);
 
@@ -293,7 +292,6 @@ console.log("le 4eme p", paragraphe[3]);
 
 let classIncr = document.getElementsByClassName('incr');
 */
-
 /* document.body.style.backgroundColor = "#587465";
 
 const newImgn1 = document.createElement('img');
@@ -317,9 +315,6 @@ document.body.append(("On est le",start.toLocaleDateString()));
 const newP3 = document.createElement('p3');
 newP3.innerHTML = "<p> true </p>"
 document.body.append(newP3); */
-
-
-
 /* const newH1 = document.createElement('h1');
 newH1.innerText = "John Delavega" ;
 document.body.append(newH1);
@@ -328,6 +323,8 @@ newH1.addEventListener('click',() =>{
     newImg2.src = '/Exo_JS/pepe-dance.gif';
     document.body.append(newImg2);
 })  */
+
+// Exercice Evenements 
 
 /* Exo 1 & 2 Evenements 
 const title1 = document.createElement('h1');
@@ -374,7 +371,6 @@ bouton3.addEventListener('click',() =>{
 });
 */
 /* Exo 3 Image Click
-
 function creerImage(event){
     const x = event.clientX;
     const y = event.clientY;
@@ -390,6 +386,7 @@ document.body.appendChild(nouvelleImage);
 document.addEventListener('click', creerImage)
 */
 /* Exo 4 
+
 const champ1 = document.createElement('input');
 champ1.innerHTML = "<input type='text' placeholder='coucou ça va?'>";
 document.body.append(champ1);
@@ -401,7 +398,7 @@ champ1.addEventListener('blur', ()=>{
     champ1.style.backgroundColor = 'white'
     champ1.style.color = 'black'
 }) */
-
+/* Exo 5 Load
 const images = document.getElementsByClassName("imageHQ");
 
 const fleche = Array.from(images);
@@ -410,4 +407,95 @@ fleche.map(img => {
     img.addEventListener('load',() =>{
         console.log(`${img.alt} vient de charger`);
     });    
+})*/
+/* Exo 6 
+
+const titreH2 = document.createElement("h2");
+titreH2.innerHTML = "Tu as gagné 1 million de dollars";
+document.body.append(titreH2);
+titreH2.style.backgroundColor = "red";
+titreH2.style.display = "block";
+
+
+
+const monH2 = document.createElement("h2");
+monH2.innerText = "Tu as gagné 1 million de dollars.";
+document.body.appendChild(monH2);
+
+
+window.addEventListener('mouseout', () => {
+    monH2.style.display = 'block';
+    monH2.style.backgroundColor = 'green';
+});
+
+window.addEventListener('mouseover', () => {
+    monH2.style.display = 'none';
 })
+// EN PLUS
+//  function cacherElementH2() {
+//     titreH2.style.display = 'none';
+// }
+// function afficherElementH2() {
+//     titreH2.style.display = 'block';
+// }
+
+// window.addEventListener('blur', () =>{
+//     cacherElementH2();
+// })
+// window.addEventListener('focus', () =>{
+//     afficherElementH2();
+// });
+*/
+/* Exo 7 
+let progressionBarre = document.getElementById('file');
+
+window.addEventListener('scroll', function(){
+    let hauteurMax = document.body.scrollHeight;
+    let scrollY = window.scrollY;
+    let scrollMax = document.body.scrollHeight - window.innerHeight;
+    let progress = (scrollY / scrollMax ) * 100 ;
+    
+    console.log('Hauteur de la page', window.innerHeight);
+    console.log('Hauteur Page', hauteurMax);
+    console.log('scrollY:', scrollY);
+    console.log('scrollMax:', scrollMax);
+    console.log('progress:', progress);
+
+    progressionBarre.style.width = progress + '%';
+});*/
+/* Exo 8
+const textarea = document.getElementById("keypress");
+const div1 = document.querySelector(".keypress1");
+
+textarea.addEventListener("input", function () {
+  div1.innerHTML = textarea.value;
+}); */
+
+// TP Personnalisation
+
+const cheveuxImages = [
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-1.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-2.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-3.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-blond-1.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-blond-2.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-blond-3.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-1.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-2.png",
+  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-3.png",
+];
+
+let image1 = 0;
+
+function imageChangerCheveux(event) {
+  image1 += event;
+
+  console.log(image1);
+  if (image1 < 0) {
+    image1 = cheveuxImages.length - 1;
+  } else if (image1 >= cheveuxImages.length) {
+    image1 = 0;
+  }
+  document.getElementById("imgChev").src = cheveuxImages[image1];
+  console.log(image1 + 'fin');
+}
