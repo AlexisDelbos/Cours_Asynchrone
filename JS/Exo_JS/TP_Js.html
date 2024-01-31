@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Exo 6 <img src="Image/Image1.jpg" class="imageHQ" alt="Image1">
     <img src="Image/Image2.jpg" class="imageHQ" alt="image2">
     <img src="Image/Image3.jpg" class="imageHQ" alt="image3">
@@ -17,28 +15,48 @@
     <!-- Exo 7
     <div class="bar">
         <div id="file"></div>
-    </div> -->    
-    
-   
-   <!-- Exo 8 
-    <textarea id="keypress" placeholder="Press a key"></textarea>
-    <div class="keypress1"></div> 
-    --> 
+    </div> -->
 
-    <!-- TP Personnalisation
-        <div class="cheveux">
-        <img src="/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/face-1.png" class="face" alt="visaga">
-        <img src="/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-1.png" class="veuch" id="imgChev">
-        <button id="imageButtonGauche" onclick="imageChangerCheveux(-1)"></button>
-        <button id="imageButtonDroit" onclick="imageChangerCheveux(1)"></button>
-        <div>
-            Couleur des cheveux
+    <!-- <textarea id="keypress" placeholder="Press a key"></textarea>
+    <div class="keypress1"></div>  -->
+
+   <!-- TP Personnalisation  -->
+    <section class="box">
+      <div class="cheveux">
+        <img
+          src="/Exo_JS/Image/asset/img/face-1.png"
+          class="face"
+          alt="visaga"
+        />
+        <img
+          src="/Exo_JS/Image/asset/img/Cheveux/hair-black-1.png"
+          class="veuch"
+          id="imgChev"
+        />
+        <button src="/Exo_JS/Image/asset/img/arrow_left.png"
+          id="imageButtonGauche"
+          onclick="imageChangerCheveux(-1)"
+        ></button>
+        <button src="/Exo_JS/Image/asset/img/arrow_right.png" id="imageButtonDroit" onclick="imageChangerCheveux(1)"></button>
+      </div>
+      <div id="boxcouleur">
+        Couleur des cheveux
+        <div class="couleurs">
+            <div id="couleur-noir" class="couleur-noir" onclick="changerCouleurCheveux('noir')"></div>
+            <div id="couleur-orange" class="couleur-orange" onclick="changerCouleurCheveux('blond')"></div>
+            <div id="couleur-bleu" class="couleur-bleu" onclick="changerCouleurCheveux('turquoise')"></div>
         </div>
-    </div>
-     --> 
+      </div>
+    </section>
+    
+    <!-- <div>
+      <label for="exo1">Texte :</label>
+      <textarea id="exo1"></textarea>
+  </div>
+  <div id="para"></div> -->
+
 
 
     <script src="function.js"></script>
-    
-</body>
+  </body>
 </html>

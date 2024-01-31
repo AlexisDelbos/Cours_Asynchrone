@@ -19,12 +19,19 @@ body{
     height: 50px;
     background-color: black;
 } */
-.cheveux{
+
+.box{
     position: relative;
     border: 5px solid paleturquoise;
     width: 1500px;
     height: 400px;
 }
+
+.cheveux{
+    margin-left: 0px;
+}
+
+
 img{
     max-width: 100%;
 }
@@ -49,3 +56,35 @@ img{
     border-color: white;
 }
 
+#boxcouleur{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+.couleurs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .couleur-noir,
+  .couleur-orange,
+  .couleur-bleu {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+  
+  .couleur-noir {
+    background-color: black;
+  }
+  
+  .couleur-orange {
+    background-color: orange;
+  }
+  
+  .couleur-bleu {
+    background-color: cyan;
+  }

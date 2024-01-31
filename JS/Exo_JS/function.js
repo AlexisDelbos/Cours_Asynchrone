@@ -1,4 +1,4 @@
-// Exo FONCTIONS 
+// Exo FONCTIONS
 
 /* function f1(){
     console.log("Bonjour monde");
@@ -324,7 +324,7 @@ newH1.addEventListener('click',() =>{
     document.body.append(newImg2);
 })  */
 
-// Exercice Evenements 
+// Exercice Evenements
 
 /* Exo 1 & 2 Evenements 
 const title1 = document.createElement('h1');
@@ -473,16 +473,18 @@ textarea.addEventListener("input", function () {
 
 // TP Personnalisation
 
+
 const cheveuxImages = [
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-1.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-2.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-black-3.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-blond-1.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-blond-2.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-blond-3.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-1.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-2.png",
-  "/Cours_Asynchrone/JS/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-3.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-black-1.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-black-2.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-black-3.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-blond-1.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-blond-2.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-blond-3.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-1.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-2.png",
+  "/Exo_JS/Image/asset/img/Cheveux/hair-turquoise-3.png",
+
 ];
 
 let image1 = 0;
@@ -499,3 +501,33 @@ function imageChangerCheveux(event) {
   document.getElementById("imgChev").src = cheveuxImages[image1];
   console.log(image1 + 'fin');
 }
+
+document.getElementById("couleur-noir").addEventListener("click", function() {
+    document.getElementById("imgChev").src = cheveuxImages[0];
+
+  });
+  
+  document.getElementById("couleur-orange").addEventListener("click", function() {
+    document.getElementById("imgChev").src = cheveuxImages[3];
+
+  });
+  
+  document.getElementById("couleur-bleu").addEventListener("click", function() {
+    document.getElementById("imgChev").src = cheveuxImages[6];
+  }); 
+
+/* TP Web Storage
+
+let monTxt = document.getElementById("exo1");
+let rendu = document.getElementById("para");
+
+monTxt.value = localStorage.getItem("monSuperTexte");
+
+if (monTxt.value) {
+  rendu.textContent = monTxt.value;
+}
+
+monTxt.addEventListener("input", function () {
+  localStorage.setItem("monSuperTexte", monTxt.value);
+  rendu.textContent = monTxt.value;
+}); */
